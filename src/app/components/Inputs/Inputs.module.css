@@ -1,0 +1,43 @@
+.input {
+  border: 1px solid grey;
+  border-radius: 2.5px;  /* 0.2em - to make sure it scales properly */
+  font-size: inherit;  /* because by default inputs have a smaller font-size than the rest of the page */
+  outline: none;
+  padding: 8px;  /* 0.5em - so that the large input will have more padding and the small input will have less padding */
+}
+
+.input:focus-visible {
+  border-color: hsl(200, 100%, 50%);
+  box-shadow: 0px 0px 5px 0px hsl(200, 100%, 50%);
+}
+
+.input.inputSuccess {
+  border-color: hsl(100 100% 50%);
+}
+
+.input.inputSuccess:focus-visible {
+  border-color: hsl(100 100% 50%);
+  box-shadow: 0px 0px 5px 0px hsl(100 100% 50%);
+}
+
+.input.inputError {
+  border-color: hsl(0, 100%, 50%);
+}
+
+.input.inputError:focus-visible {
+  border-color: hsl(0, 100%, 50%);
+  box-shadow: 0px 0px 5px 0px hsl(0 100% 50%);
+}
+
+.input.inputLarge {
+  font-size: 1.25rem;
+}
+
+.input.inputSmall {
+  font-size: .75rem;
+}
+
+.input.input:disabled {
+  background-color: hsl(0, 0%, 90%);
+  cursor: not-allowed;
+}
